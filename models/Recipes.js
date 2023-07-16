@@ -1,4 +1,4 @@
-const  mongoose =require( "mongoose");
+const  mongoose = require("mongoose");
 
 const recipeSchema = mongoose.Schema({
   name: {
@@ -16,7 +16,7 @@ const recipeSchema = mongoose.Schema({
     required: true,
   },
 
-  instructions: {
+  imageUrl: {
     type: String,
     required: true,
   },
@@ -30,6 +30,5 @@ const recipeSchema = mongoose.Schema({
     required: true,
   },
 });
-
-const RecipesModel = mongoose.model("Recipes", recipeSchema);
-module.exports=RecipesModel
+ const RecipesModel = mongoose.model("Recipes", recipeSchema);
+module.exports=RecipesModel;

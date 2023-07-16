@@ -18,10 +18,11 @@ app.use("/auth",router1 );
 app.use("/recipes", router2);
 
 mongoose.connect(
-  "mongodb://localhost:27017/Recipe",
+  "mongodb+srv://sahebbali253:saheb1234@cluster0.tpscdwz.mongodb.net/?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
+    serverSelectionTimeoutMS: 30000,
   }
 ).then(() => {
   console.log('Database Connection Success');
